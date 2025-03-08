@@ -25,7 +25,7 @@ body {
   height: 100px;
   width: 100%;
   float: right;
-  grid-area: 9 / span 3 / 1 / span 2
+  grid-area: 9 / span 3 / 1 / span 2;
 }
 
 .navigation ul {
