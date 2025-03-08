@@ -9,8 +9,8 @@ body {
 }
 
 .layout {
-  display: grid
-  grid-template: repeat(12,1fr) / repeat(12,1fr);
+  display: grid;  /* Fixed: Added missing semicolon */
+  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
 }
 
 .container {
@@ -24,17 +24,24 @@ body {
 .navigation {
   height: 100px;
   width: 100%;
-  float: right;
-  grid-area: 9 / span 3 / 1 / span 2;
+  /* Removed float: right; */
+  grid-area: 1 / 9 / 2 / span 3; /* Fixed incorrect grid placement */
 }
 
 .navigation ul {
   font-size: 12px;
   color: blue;
   display: inline;
+  padding: 0; /* Ensure no default list padding */
+  list-style: none; /* Remove bullet points */
 }
 
-.navigation.logo {
+.navigation ul li {
+  display: inline-block;
+  margin-right: 10px; /* Add spacing between list items */
+}
+
+.navigation .logo {  /* Fixed selector */
   
 }
 
