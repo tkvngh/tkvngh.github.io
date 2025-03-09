@@ -33,6 +33,7 @@ body {
     color: black;
     position: fixed;
     height: 75px;
+    width: 100%;
     border: 2px solid black;
   }
 
@@ -42,6 +43,7 @@ body {
     gap: 20px;
     padding: 10px;
     margin: 15px 50px;
+    position: relative;
   }
 
   .navigation ul li {
