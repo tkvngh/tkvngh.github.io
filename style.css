@@ -33,10 +33,9 @@ body {
     color: black;
     position: fixed;
     top: 0;
-    
     height: 75px;
     width: 100%;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     background: white;
     display: flex;
     align-items: center;
@@ -77,9 +76,10 @@ body {
     top: 100%;
     left: 0;
     background: white;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     padding: 10px;
     display: none;
+    width: 100%
   }
 
   .navigation ul li:hover + #open {
