@@ -4,47 +4,50 @@
   height: auto;
 }
 
-body {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
   margin: 0;
-}
+  padding: 0;
+  }
 
-.layout {
-  display: grid;  /* Fixed: Added missing semicolon */
-  grid-template: repeat(12, 1fr) / repeat(12, 1fr);
-}
+   .container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: flex-end;
+    gap: 10px;
+  }
 
-.container {
-  display: flex;
-}
-
-.item {
+  .navigation {
+    color: black;
+  }
   
-}
-
-.navigation {
-  height: 100px;
-  width: 100%;
-  /* Removed float: right; */
-  grid-area: 1 / 9 / 2 / span 3; /* Fixed incorrect grid placement */
-}
-
-.navigation ul {
-  font-size: 12px;
-  color: blue;
-  display: inline;
-  padding: 0; /* Ensure no default list padding */
-  list-style: none; /* Remove bullet points */
-}
-
-.navigation ul li {
-  display: inline-block;
-  margin-right: 10px; /* Add spacing between list items */
-}
-
-.navigation .logo {  /* Fixed selector */
+  .navigation ul {
+    list-style: none;
+  }
   
+  .navigation ul li {
+    color: black
+  }
+
+  .navigation ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .navigation ul li a::hover {
+    color: blue;
+  }
+
+  .item {
+    
+  }
+
+  h1 {}
+
 }
 
-h1 span {
-  display: table;
-}
