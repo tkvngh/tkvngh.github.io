@@ -82,7 +82,7 @@ body {
     width: 100%;
   }
 
-  .navigation ul li:hover + #open {
+  .navigation ul li:hover + ul #open {
     display: block;
   }
 
