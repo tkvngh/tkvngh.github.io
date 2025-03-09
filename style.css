@@ -1,6 +1,7 @@
 * {
   width: auto;
   height: auto;
+  fomt-size: 8px;
 }
 
 @media only screen 
@@ -31,14 +32,14 @@
   }
   
   .navigation ul li {
-    font-size: 22px;
+    font-size: 5em;
     color: black
   }
 
   .navigation ul li a {
     text-decoration: none;
     color: black;
-    font-size: 22px;
+    font-size: 5em;
   }
   
   #open {
