@@ -33,7 +33,7 @@ body {
     color: black;
     position: fixed;
     height: 75px;
-    border: 2px solid black
+    border: 2px solid black;
   }
 
   .navigation ul {
@@ -45,7 +45,7 @@ body {
   }
 
   .navigation ul li {
-    font-size: 2em; /* Reduced to make it more readable */
+    font-size: 3em; /* Reduced to make it more readable */
     color: black;
   }
 
@@ -67,7 +67,7 @@ body {
 
   .navigation:hover #open {
     display: block;
-    border: 2px solid black
+    border: 2px solid black;
     position: absolute;
     width: 100%;
     top: 75px;
