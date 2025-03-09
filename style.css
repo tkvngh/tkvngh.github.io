@@ -1,64 +1,67 @@
+/* General Fixes */
 * {
-  width: auto;
-  height: auto;
-  fomt-size: 8px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 8px; /* Fixed typo */
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive Styling */
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 852px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
   body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
   }
 
-   .container {
+  .container {
     display: flex;
-    flex-flow: row wrap;
-    margin: auto;
     justify-content: flex-end;
+    align-items: center;
     gap: 10px;
   }
 
+  /* Navigation */
   .navigation {
     color: black;
   }
-  
+
   .navigation ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
+    gap: 20px;
   }
-  
+
   .navigation ul li {
-    font-size: 5em;
+    font-size: 2em; /* Reduced to make it more readable */
     color: black;
   }
 
   .navigation ul li a {
     text-decoration: none;
     color: black;
-    font-size: 5em;
+    font-size: 2em; /* Adjusted for consistency */
   }
-  
-  #open {
-    visibility: hidden;
-  }
-  
-  .navigation ul li a::hover {
+
+  /* Hover and Active States */
+  .navigation ul li a:hover {
     color: blue;
   }
 
-  .navigation ul li a::active #open {
-    visibility: visible;
-  }
-  
-  .item {
-    
+  /* Menu Toggle (Pure CSS Approach) */
+  #open {
+    display: none;
   }
 
-  h1 {}
+  .navigation:hover #open {
+    display: block;
+  }
 
 }
-
